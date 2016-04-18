@@ -15,15 +15,6 @@
     return false;
   }
 
-  var onError = function(err) {
-      notify.onError({
-        title:    "Gulp error in " + err.plugin,
-        message:  err.toString()
-      })(err);
-      beep(3);
-      this.emit('end');
-  };
-
   // SCSS config
   var input = 'styles/main.scss';
   var output = '.build/css';
