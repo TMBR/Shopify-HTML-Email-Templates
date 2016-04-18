@@ -15,18 +15,22 @@
 * Shipping update	- Sent to the customer when an order's shipping information is updated
 
 ### Get started
+CD to the local directory where this repo has been cloned, then run
 ```
-npm install
-```
-
-To Build the inline css HTML templates run
-```
-gulp
+$ npm install
 ```
 
-You will then need to copy and paste the .HTML found in the "build" folder for each template into shopify.
+When your ready to build the inline css HTML templates run.
+```
+$ gulp
+```
 
-File names should match the templates in shopify.
+You will then need to copy and paste the .HTML found in the "build" folder for each template into shopify. https://YOUR-SITE-NAME.myshopify.com/admin/settings/notifications
+
+The files in your local /build folder should match the templates in shopify. Pick the template you want to replace - go to the HTML tab and paste in the .HTML from your local build.
+
+![alt text](https://cldup.com/gXw3Zl0Wfn.jpg "Shopify Email notice admin")
+
 
 #### Theme assumptions :
 * logo.png in your assets folder

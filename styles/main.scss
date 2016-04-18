@@ -2,6 +2,15 @@
 $linkcolor : #2BA6CB;
 $headingcolor : #6f6f6f;
 $bordercolor : rgb(215,215,215);
+$backgroundcolor : #efeee7;
+
+$headingbackground : #efeee7;
+
+$footerbackground : #1e1933;
+$footerfontcolor : #fff;
+
+$btnbackground : #03bbd2;
+$btnfontcolor : #fff;
 
 /*Font Variables */
 $copyfont : "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -28,6 +37,7 @@ $headingfont : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
 		-webkit-text-size-adjust:none;
 		width: 100%!important;
 		height: 100%;
+		background-color: $backgroundcolor;
 	}
 
 
@@ -38,8 +48,8 @@ $headingfont : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
 
 	.btn {
 		text-decoration:none;
-		color:#FFF;
-		background-color:#666;
+		color: $btnfontcolor;
+		background-color: $btnbackground;
 		width:80%;
 		padding:15px 10%;
 		font-weight:bold;
@@ -85,7 +95,7 @@ $headingfont : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
 	/* -------------------------------------
 			HEADER
 	------------------------------------- */
-	table.head-wrap { width: 100%;}
+	table.head-wrap { width: 100%; background-color: $headingbackground;}
 
 	.header.container table td.logo { padding: 15px; }
 	.header.container table td.label { padding: 15px; padding-left:0px;}
@@ -100,13 +110,16 @@ $headingfont : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
 	/* -------------------------------------
 			FOOTER
 	------------------------------------- */
-	table.footer-wrap { width: 100%;	clear:both!important;
-	}
-	.footer-wrap .container td.content  p { border-top: 1px solid $bordercolor; padding-top:15px;}
-	.footer-wrap .container td.content p {
-		font-size:10px;
-		font-weight: bold;
+	table.footer-wrap {
+		width: 100%;
+		clear:both!important;
+		background-color: $footerbackground;
+		border-top: 1px solid $bordercolor;
 
+	}
+	.footer-wrap  p {
+		padding-top:15px;
+		color: $footerfontcolor;
 	}
 
 
@@ -114,7 +127,7 @@ $headingfont : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
 			TYPOGRAPHY
 	------------------------------------- */
 	h1,h2,h3,h4,h5,h6 {
-	font-family:  $headingfont, line-height: 1.1; margin-bottom:15px; color:#000;
+	font-family:  $headingfont; line-height: 1.1; margin-bottom:15px; color:#000;
 	}
 	h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-size: 60%; color: $headingcolor; line-height: 0; text-transform: none; }
 

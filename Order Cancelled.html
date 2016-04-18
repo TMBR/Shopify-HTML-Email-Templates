@@ -13,19 +13,19 @@
 <body bgcolor="#FFFFFF">
 
 <!-- HEADER -->
-<table class="head-wrap" bgcolor="#ff4259">
+<table class="head-wrap">
 	<tr>
 		<td></td>
 		<td class="header container">
 
 				<div class="content">
-					<table bgcolor="#ff4259">
+					<table>
 						<tr>
 							<td>
 								<a href="{{ shop.url }}" title="{{ shop_name }}" alt="{{ shop_name }}" /><img src="{{ 'logo.png' | asset_url }}" style="width:70px;height:auto;" /></a>
 							</td>
 							<td align="right">
-								<h6 class="collapse">Order Cancelled</h6>
+								<h6 class="collapse">{{ shop_name }}</h6>
 							</td>
 						</tr>
 					</table>
@@ -85,25 +85,25 @@
 <!-- /BODY -->
 
 <!-- FOOTER -->
-<table class="footer-wrap" bgcolor="#ff4259">
+<table class="footer-wrap">
 	<tr>
 		<td></td>
 		<td class="container">
 
-				<!-- content -->
-				<div class="content">
-				<table>
+		<!-- content -->
+		<div class="content">
+			<table>
 				<tr>
 					<td align="center">
-						<p>Thank you for shopping at <a href="{{ shop.url }}" style="color:#111111;">{{ shop.name }}</a>!</p>
+						<p>Thank you for shopping at <a href="{{ shop.url }}">{{ shop.name }}</a>!</p>
 						<a href="{{ shop.url }}" title="{{ shop_name }}"><img src="{{ 'logo.png' | asset_url }}" style="width:40px;height:auto;" alt="{{ shop_name }}" /></a>
 						<br/><br/>
-						<p><strong><a href="{{ shop.email }}" style="color:#111111;">{{ shop.email }}</a></strong></p>
+						<p><strong><a href="{{ shop.email }}">{{ shop.email }}</a></strong></p>
 						<p><small>© {{ shop.name }}</small></p>
 					</td>
 				</tr>
 			</table>
-				</div><!-- /content -->
+		</div><!-- /content -->
 
 		</td>
 		<td></td>
