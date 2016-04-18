@@ -1,4 +1,5 @@
-## Responsive HTML Email Templates for Shopify
+## Responsive HTML Email Templates for Shopify - Gulp Inline css tool and SCSS
+#### Modified for GULP inline task and scss from @Cam @ Elkfox.com, HTML Shopify Templates https://github.com/Cam/Shopify-HTML-Email-Templates
 
 ### Templates for all 'customer facing' emails:
 
@@ -13,14 +14,16 @@
 * Shipping confirmation - Sent to the customer when an order is shipped
 * Shipping update	- Sent to the customer when an order's shipping information is updated
 
-![alt text](https://github.com/Cam/Shopify-HTML-Email-Templates/raw/master/demo-come-back.jpg "Demo Example")
+### Get started
+```
+npm install
+```
 
-Don't forget to convert your final markup to inline styles so email software doesnt mess it up!
+To Build the inline css HTML templates run
+```
+gulp
+```
 
-You can do that here: 
+You will then need to copy and paste the .HTML found in the "build" folder for each template into shopify.
 
-http://zurb.com/ink/inliner.php
-
-### More Info
-
-Contact me at http://camgould.com for more info
+File names should match the templates in shopify.
