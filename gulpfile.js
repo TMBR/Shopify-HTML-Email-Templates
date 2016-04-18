@@ -6,8 +6,6 @@
     var inlineCss = require('gulp-inline-css');
     var autoprefixer = require('gulp-autoprefixer');
     var plumber = require('gulp-plumber');
-    var notify = require('gulp-notify');
-    var beep = require('beepbeep');
     var watch = require('gulp-watch');
   } catch( e ) {
     console.log('Could not find one of the packages gulp needs to run.');
@@ -17,7 +15,7 @@
 
   // SCSS config
   var input = 'styles/main.scss';
-  var output = '.build/css';
+  var output = 'build/css';
   var sassOptions = {
     errLogToConsole: true,
     outputStyle: 'expanded'
@@ -50,7 +48,6 @@
       gulp.watch(templates, ['inline']).on('change', function(event) {
         console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
       });
-
   });
 
   // Default Build task : gulp

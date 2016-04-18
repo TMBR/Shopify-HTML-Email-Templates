@@ -23,7 +23,7 @@ $headingfont : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
 		margin:0;
 		padding:0;
 	}
-	* { font-family: $copyfont }
+	p, .content { font-family: $copyfont }
 
 	img {
 		max-width: 100%;
