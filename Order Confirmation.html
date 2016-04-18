@@ -25,7 +25,7 @@
 								<a href="{{ shop.url }}" title="{{ shop_name }}" alt="{{ shop_name }}" /><img src="{{ 'logo.png' | asset_url }}" style="width:70px;height:auto;" /></a>
 							</td>
 							<td align="right">
-								<h6 class="collapse">{{ shop_name }}</h6>
+								<h6 class="collapse">{{ shop.name }}</h6>
 							</td>
 						</tr>
 					</table>
@@ -52,8 +52,11 @@
 
 						<br/>
 
-						<h4>Your Order <small>{{ date | date: "%d/%m/%Y" }}</small></h4>
+						<h4>Your Order {{ order.order_number }} <small>{{ date | date: "%d/%m/%Y" }}</small></h4>
+
 						<p>Thank you for placing your order with {{ shop_name }}. This email is to confirm your order has been placed successfully, and will be processed & shipped to you soon.</p>
+
+						<p>You can check the status of your order by logging into your membership account. If you have any questions about your order please contact us at <a href="mailto:confirmation@guenergy">confirmation@guenergy.com</a> or call us at 1-800-400-1995 Monday - Friday, 8 am - 4:30 pm PST. </p>
 
 						<br/>
 
@@ -210,7 +213,7 @@
 						<p>Thank you for shopping at <a href="{{ shop.url }}">{{ shop.name }}</a>!</p>
 						<a href="{{ shop.url }}" title="{{ shop_name }}"><img src="{{ 'logo.png' | asset_url }}" style="width:40px;height:auto;" alt="{{ shop_name }}" /></a>
 						<br/><br/>
-						<p><strong><a href="{{ shop.email }}">{{ shop.email }}</a></strong></p>
+						<p><strong>Call: 800.400.1995 > Fax: 510.527.4199 > <a href="{{ shop.email }}">{{ shop.email }}</a></strong></p>
 					</td>
 				</tr>
 			</table>

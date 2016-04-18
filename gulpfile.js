@@ -40,9 +40,17 @@
           .pipe(gulp.dest('build/'));
   });
 
+  // build inline templates when styles change
+  gulp.task('rebuild', function(){
+     runSequence(
+      'styles',
+      'inline'
+    );
+  });
+
   // Watch scss files and .html templates
   gulp.task('watch', function() {
-      gulp.watch(input, ['styles']).on('change', function(event) {
+      gulp.watch(input, ['rebuild']).on('change', function(event) {
         console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
       });
       gulp.watch(templates, ['inline']).on('change', function(event) {
