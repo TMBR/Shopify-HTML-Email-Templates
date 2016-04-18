@@ -1,5 +1,5 @@
 ## Responsive HTML Email Templates for Shopify - Gulp Inline css tool and SCSS
-#### Modified for GULP inline task and scss from @Cam @ Elkfox.com, HTML Shopify Templates https://github.com/Cam/Shopify-HTML-Email-Templates
+##### Modified for GULP inline task and scss from @Cam @ Elkfox.com, HTML Shopify Templates https://github.com/Cam/Shopify-HTML-Email-Templates
 
 ### Templates for all 'customer facing' emails:
 
@@ -27,3 +27,6 @@ gulp
 You will then need to copy and paste the .HTML found in the "build" folder for each template into shopify.
 
 File names should match the templates in shopify.
+
+#### Theme assumptions :
+* logo.png in your assets folder

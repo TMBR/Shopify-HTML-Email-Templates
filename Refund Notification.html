@@ -50,10 +50,6 @@
 						<br/>
 						<h3>Hi{% if customer.name %} {{ customer.name }}{% endif %},</h3>
 
-						<!-- You may like to include a Hero Image -->
-						<p><img src="http://placekitten.com/g/600/300" alt="" /></p>
-						<!-- /Hero Image -->
-
 						<br/>
 
 						<p>We have refunded your order ({{ name }}){% if amount > 0 %} a total of {{ amount | money_with_currency }}{% endif %}{% if refund_line_items.size > 0 %} for:</p>

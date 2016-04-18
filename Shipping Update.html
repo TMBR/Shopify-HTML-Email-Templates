@@ -51,10 +51,6 @@
 
 						<h3>Hi{% if billing_address.name %}, {{ billing_address.name }}{% endif %}</h3>
 
-						<!-- You may like to include a Hero Image -->
-						<p><img src="http://placekitten.com/g/600/300" alt="" /></p>
-						<!-- /Hero Image -->
-
 						<br/>
 
 						<h5>The following shipped items from order {{ name }} have been updated with new info:</h5>
@@ -72,16 +68,10 @@
 
 						<br/>
 
-						<p>They are being shipped{% if fulfillment.tracking_company %} via {{ fulfillment.tracking_company }}{% endif %} with tracking number {{ fulfillment.tracking_number }}.</p>
+						<a href="{% if order_status_url %}{{ order_status_url }}{% else %}{{ fulfillment.tracking_url }}{% endif %}">Click here to see the status of this shipment</a>.</p>
 
-						<p style="text-align:center;">
-							<a class="btn" href="{{ fulfillment.tracking_url }}">View status &raquo;</a>
-						</p>
+						<p>Please allow some time for the status of the shipment to correctly display at the above address.</p>
 
-						<p><small>Please allow some time for the status of the shipment to correctly display at the above address.
-						<br/>
-						If you can't get the button to work, paste this link into your browser: {{ fulfillment.tracking_url }}
-						</small></p>
 
 					</td>
 				</tr>
