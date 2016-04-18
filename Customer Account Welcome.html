@@ -50,12 +50,6 @@
 						<br/>
 						<h3>Hi{% if customer.name %} {{ customer.name }}{% endif %},</h3>
 
-						<!-- You may like to include a Hero Image -->
-						<p><img src="http://placekitten.com/g/600/300" alt="" /></p>
-						<!-- /Hero Image -->
-
-						<br/>
-
 						<p>Thanks for creating an account at {{ shop.name }}. Your account is now active.</p>
 
 						<p>The next time you shop at {{ shop.name }}, you can save time at checkout by logging in. Your information will be automatically added to your order. You can also keep track of orders in your account.</p>
@@ -96,7 +90,6 @@
 						<a href="{{ shop.url }}" title="{{ shop_name }}"><img src="{{ 'logo.png' | asset_url }}" style="width:40px;height:auto;" alt="{{ shop_name }}" /></a>
 						<br/><br/>
 						<p><strong><a href="{{ shop.email }}">{{ shop.email }}</a></strong></p>
-						<p><small>© {{ shop.name }}</small></p>
 					</td>
 				</tr>
 			</table>
